@@ -1,0 +1,4 @@
+GET		/get			controllers.IndexController.get()
+GET 	/post			controllers.IndexController.post()
+GET		/put			controllers.IndexController.put()
+GET 	/delete			controllers.IndexController.delete()
