@@ -24,21 +24,21 @@ public class IndexController extends Controller
 
 	public CompletionStage<Result> get()
 	{
-		return apiService.get("http://localhost:9009/api?input=abc", Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
+		return apiService.get("https://cors/playframework.com/api?input=abc", Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
 	}
 
 	public CompletionStage<Result> post()
 	{
-		return apiService.post("http://localhost:9009/api", Map.of("a", "A", "b", "B"), Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
+		return apiService.post("https://cors/playframework.com/api", Map.of("a", "A", "b", "B"), Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
 	}
 
 	public CompletionStage<Result> put()
 	{
-		return apiService.put("http://localhost:9009/api", Map.of("a", "A", "b", "B"), Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
+		return apiService.put("https://cors/playframework.com/api", Map.of("a", "A", "b", "B"), Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
 	}
 
 	public CompletionStage<Result> delete()
 	{
-		return apiService.delete("http://localhost:9009/api", Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
+		return apiService.delete("https://cors/playframework.com/api", Map.of("c", Arrays.asList("d"))).thenApply(Results::ok);
 	}
 }
